@@ -1,0 +1,6 @@
+git remote set-url origin https://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@github.com/tanukidenuts/cit17phpexercise.git
+
+
+git add.
+git commit -m ""
+git push
