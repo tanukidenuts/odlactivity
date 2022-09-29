@@ -1,0 +1,28 @@
+<?php
+		$cities = array("Tokyo","Mexico City","New York City","Mumbai",
+        "Seoul","Shanghai","Lagos","Buenos Aires","Cairo", "London.");
+		$counter = count($cities);
+		for($i = 0; $i < $counter; $i++){
+            if ($i<9){echo $cities[$i].', ';}
+            else {echo $cities[$i];}
+		}
+		echo "<br/>";
+		sort($cities);
+		?>
+		<ul>
+			<?php
+			for($i = 0; $i < $counter; $i++){
+				echo "<li>$cities[$i]</li>";
+			}
+			?>
+		</ul>
+		<ul>
+			<?php
+			$thecities = array("Los Angeles", "Calcutta", "Osaka", "Beijing");
+			$citiesnew = array_merge($cities, $thecities);
+			sort($citiesnew);
+			$counter2 = count($citiesnew);
+			for($i = 0; $i < $counter2; $i++){
+				echo "<li>$citiesnew[$i]</li>";
+			}
+			?>
