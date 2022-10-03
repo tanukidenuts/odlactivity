@@ -1,0 +1,33 @@
+<?php
+
+$arr = array (25,12,43);
+$b = array_fill(0, count($a), 0);
+$c = -1;
+
+echo("Input 3 elements in the array: <br> ");
+for($i = 0; $i < count($arr); $i++)
+{
+$key=$arr[$i];
+$c = 1;
+for($j = $i+1; $j < count($arr); $j++)
+{
+if($arr[$i] == $a[$j])
+{
+$count++;	
+$b[$j] = $c;
+}
+}
+if($b[$i] != $c)
+$b[$i] =$c;
+echo "element - [".$i."]"." : ".$key. "<br>";
+}
+echo ("<br>The frequency of all elements of an array : <br>" );
+for( $i = 0; $i < count($b); $i++)
+{
+if($b[$i] != $c)
+{
+echo( $arr[$i] ." occurs " );
+echo( $b[$i]." times.");
+echo("<br>");
+}
+}
