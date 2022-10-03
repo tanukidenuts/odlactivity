@@ -1,0 +1,29 @@
+<?php
+$arr = array(25, 47, 42, 56, 32);
+$odd = array();
+$ev = array();
+echo "Input the number of elements to be stored in the array: " . "<br>";
+$s = count($arr);
+for ($i = 0; $i < $s; $i++) {
+    echo "element - ["."$i"."] : "."$arr[$i]"."<br>" ;
+}
+$a = 0;
+$b = 0;
+for ($i = 0; $i < $s; $i++) {
+    if ($arr[$i] % 2 == 0) {
+        $ev[$b] = $arr[$i];
+        $a++;
+    } else {
+        $odd[$b] = $arr[$i];
+        $b++;
+    }
+}
+echo "<br>" . "The Even elements are : " . "<br>";
+for ($i = 0; $i <= $a; $i++) {
+    echo "$ev[$i] " . "\n" ;
+}
+echo "<br>The Odd elements are :<br> ";
+for ($i = 0; $i <= $b; $i++) {
+    echo "$odd[$i] ";
+}
+?>
