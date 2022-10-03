@@ -1,0 +1,17 @@
+<?php
+$a=array(5, 1, 1);
+    $arrLength=count($a);
+    $elementCount=array();
+  for($i=0;$i<$arrLength;$i++)
+    {
+       $b=$a[$i];
+      if($elementCount[$b]>=1)
+       {
+          $elementCount[$b]++;
+       } else  {
+          $elementCount[$b]=1;
+       }       
+       print("Element - "."[".$i."]"." : ".$b."<br>");
+   }
+ 	echo "Total number og duplicate elements found in the array is : $key";
+?> 
