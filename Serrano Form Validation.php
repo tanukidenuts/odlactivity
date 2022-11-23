@@ -43,7 +43,7 @@ return $data;
 }
 ?>
 
-<h1 style="color: green; font-face: arial; border:2px solid DodgerBlue; width: 450px;">Isabelo PHP Form Validation</h1>
+<h1 style="color: green; font-face: arial; border:2px solid DodgerBlue; width: 450px;">Serrano PHP Form Validation</h1>
 <p><span class="_error">* required field</span></p>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
 Name: <input type="text" name="name">
